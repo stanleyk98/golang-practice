@@ -1,13 +1,14 @@
 package main
 
 import (
+	//표준출력 os.Stdout 은 io 패키지를 사용한다
 	"io"
 	"os"
 )
 
 func main() {
 	myString := ""
-	argument := os.Args
+	arguments := os.Args
 
 	if len(arguments) == 1 {
 		myString = "please give me one argument~!"
