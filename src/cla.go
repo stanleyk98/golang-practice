@@ -14,6 +14,8 @@ func main() {
 	}
 
 	// 이번 예제에만 적용할 strconv.parsefloat 에러리턴값을 무시하기 위한 임의 코딩
+	// MacOS 편집
+
 	arguments := os.Args
 
 	min, _ := strconv.ParseFloat(arguments[1], 64)
