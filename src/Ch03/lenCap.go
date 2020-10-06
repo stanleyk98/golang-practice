@@ -1,0 +1,33 @@
+package main
+
+import (
+	"fmt"
+)
+
+func printSlice(x []int) {
+	for _, number := range x {
+		fmt.Print(number, " ")
+	}
+	fmt.Println()
+}
+
+func main() {
+	aSlice := []int{-1, 0, 4} // int형 원소 3개이상인 슬라이스 생성
+	fmt.Printf("aSlice: ")
+	printSlice(aSlice)
+
+	fmt.Printf("Cap: %d, Length: %d\n", cap(aSlice), len(aSlice)) // 용량은 3, 길이는 3
+
+	aSlice = append(aSlice, -100) // 1개 원소 추가, 슬라이스에 원소 추가시는 append()함수 사용
+	fmt.Printf("aSlice: ")
+	printSlice(aSlice)
+
+	fmt.Printf("Cap: %d, Length: %d\n", cap(aSlice), len(aSlice)) // 1개 원소가 추가되어 용량은 2배인 6, 길이는 4
+
+	aSlice = append(aSlice, -2)
+	aSlice = append(aSlice, -3)
+	aSlice = append(aSlice, -4) // 3개 원소 더 추가
+	printSlice(aSlice)
+
+	fmt.Printf("Cap: %d, Length: %d\n", cap(aSlice), len(aSlice)) // 3개원소가 더 추가되어 용량은 2배인 12, 길이는 7
+}
