@@ -15,11 +15,14 @@ func main() {
 		return
 	}
 	myTime = os.Args[1]
+	//Mon Jan 2 15:04:05 MST 2006
 
 	d, err := time.Parse("15:04", myTime)
 	if err == nil {
 		fmt.Println("Full: ", d)
 		fmt.Println("Time: ", d.Hour(), d.Minute())
+		fmt.Println("확인", os.Args[0])
+		fmt.Println("확인", os.Args[1])
 	} else {
 		fmt.Println(err)
 	}

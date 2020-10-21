@@ -14,12 +14,12 @@ func main() {
 		return
 	}
 	myDate = os.Args[1]
-
+	//Mon Jan 2 15:04:05 MST 2006
 	d, err := time.Parse("02 January 2006", myDate)
 
 	if err == nil {
 		fmt.Println("Full: ", d)
-		fmt.Println("Time: ", d.Day(), d.Month(), d.Year())
+		fmt.Println("Date: ", d.Day(), d.Month(), d.Year())
 	} else {
 		fmt.Println(err)
 	}
