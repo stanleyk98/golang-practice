@@ -10,7 +10,7 @@ import (
 func main() {
 	arguments := os.Args
 	if len(arguments) < 2 {
-		fmt.Println("한문자 이상 입력 바람")
+		fmt.Println("한문자 이상의 숫자를 입력 바람")
 		os.Exit(1)
 	}
 
@@ -39,8 +39,11 @@ func main() {
 		fmt.Println("모름")
 	}
 
+	// - 부호가 있으면 nagative
+	// 소수점 있으면 float 타입
+	// 메일형식 @A.com 등
 	var negative = regexp.MustCompile(`-`)
-	var floatingPoint = regexp.MustCompile(`\d?\. \d`)
+	var floatingPoint = regexp.MustCompile(`\d?\.\d`)
 	var email = regexp.MustCompile(`^[^@]+@[^@.]+\.[^@.]+`)
 
 	switch {
