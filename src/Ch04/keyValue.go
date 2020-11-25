@@ -62,6 +62,7 @@ func main() {
 		text = strings.TrimSpace(text)
 
 		tokens := strings.Fields(text)
+		//입력되는 라인 전체를 토큰으로 받는다
 
 		switch len(tokens) {
 		case 0:
