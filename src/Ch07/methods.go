@@ -26,6 +26,7 @@ func main() {
 	fmt.Println(regularFunction(i, j))
 	// regularfunction 에서 X값은 1 + -5 , Y값은 2 + -2   -> {-4 , 0}
 	// -4, 0 으로 출력 안되고 왜 {-4,0} 으로 출력될까?
+	// 리턴값을 받는게 구조체 (struct) 라서 {} 로 리턴
 
 	fmt.Println(i.method(j))
 

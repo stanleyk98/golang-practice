@@ -40,5 +40,5 @@ func main() {
 	z := square{X: 4}
 	tellInterface(z)
 
-	tellInterface(10)
+	tellInterface("stanlely")
 }

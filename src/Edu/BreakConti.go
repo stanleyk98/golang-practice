@@ -6,6 +6,7 @@ import (
 
 func main() {
 	var a = 1
+
 	for a < 15 {
 		if a == 5 {
 			a += a
@@ -17,6 +18,7 @@ func main() {
 			break
 		}
 	}
+
 	if a == 11 {
 		goto END
 	}
