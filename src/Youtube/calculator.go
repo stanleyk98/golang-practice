@@ -44,6 +44,8 @@ func main() {
 	// 	fmt.Println("연산자를 잘못 입력했습니다")
 	// }
 
+	// --- Switch Case 로 구현해보기 --- //
+
 	switch line {
 	case "+":
 		fmt.Printf("%d + %d = %d  \n", n1, n2, n1+n2)
