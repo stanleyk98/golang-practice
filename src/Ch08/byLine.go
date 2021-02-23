@@ -11,7 +11,7 @@ import (
 func lineByLine(file string) error {
 	var err error
 
-	// 읽을 파일 열기
+	// 에러체크
 	f, err := os.Open(file)
 	if err != nil {
 		return err

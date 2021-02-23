@@ -8,9 +8,11 @@ import (
 	"os"
 )
 
+// 파일쓰는 5가지 방법
+
 func main() {
 	// byte 슬라이스
-	s := []byte("쓰기위한 데이터\n")
+	s := []byte("파일 내용입니다~ \n")
 
 	// 파일쓰기 방법1 : Fprintf() 함수 사용
 	f1, err := os.Create("f1.txt")
@@ -43,6 +45,7 @@ func main() {
 	w.Flush()
 
 	// 파일쓰기 방법4 : ioutil.WriteFile() 함수 사용
+	// ioutil 은 전체파일을 메모리로 읽어들여 빠른읽기를 수행할수 있지만 큰 파일을 읽을때는 비추
 	f4 := "f4.txt"
 	err = ioutil.WriteFile(f4, s, 0644)
 	if err != nil {
