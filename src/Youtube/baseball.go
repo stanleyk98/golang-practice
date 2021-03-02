@@ -79,6 +79,27 @@ func MakeNumbers() [3]int {
 func InputNumbers() [3]int {
 	// 0~9 사이에 겹치지않는 숫재 3개를 입력받아 반환한다
 	var rst [3]int
+
+	for {
+		var no int
+		_, err := fmt.Scanf("%d", &no)
+		if err != nil {
+			fmt.Println("입력을 다시하세요")
+			continue
+		}
+
+		idx := 0
+		for no > 0 {
+			// 1의 자리수, 10의 자리수, 100의 자리수를 구한다
+			// 입력받는 값을 10으로 나눈 나머지 값이 1의 자리수
+			n := no % 10
+			no = no / 10
+			rst[idx] = n
+			idx++
+		}
+		break
+	}
+	rst[0], rst[2] = rst[2], rst[0]
 	return rst
 }
 
