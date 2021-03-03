@@ -69,3 +69,6 @@ func main() {
 	plot.AddPointGroup("Circle: ", style, points)
 	plot.SavePlot("csv-output.png")
 }
+
+// go run csvplot.go test02.csv
+// 에러남...

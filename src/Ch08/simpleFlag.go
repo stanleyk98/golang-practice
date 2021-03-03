@@ -29,7 +29,7 @@ func main() {
 // bool 값을 인수로 받을때는 '=' 으로 ?
 // int 값을 인수로 받을때는 상관이 없나?
 
-// go run simpleflag.go -k false -0 201		--> 왜 bool값은 true 가 되지않고 int값이 2가 출력되는가?
+// go run simpleflag.go -k false -0 201		--> 왜 bool값은 false 가 되지않고 int값이 2가 출력되는가?
 // go run simpleflag.go -k=false -0 201		--> 왜 int값이 202가 출력되는가?
 // go run simpleflag.go -0= 100  			--> 띄어쓰면 에러출력
 

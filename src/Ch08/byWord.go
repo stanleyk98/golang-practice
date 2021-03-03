@@ -53,3 +53,6 @@ func main() {
 		}
 	}
 }
+
+// go run byword.go test01.log
+// 이것도 왜 3번째 라인은 출력안될까?

@@ -50,4 +50,5 @@ func main() {
 	}
 }
 
-// go run byline.go /test01.log   --> file 저장된 경로 어찌 지정함?
+// go run byline.go test01.log
+// 왜 3rd line 은 출력되지 않을까?
