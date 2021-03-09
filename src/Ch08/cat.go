@@ -26,7 +26,7 @@ func main() {
 	filename := ""
 	arguments := os.Args
 
-	// 커맨드라인 인수에 입력값 없으면 표준입력에 표준출력값을 복사한다
+	// 커맨드라인 인수에 입력값 없으면 표준출력에 표준입력값을 복사한다
 	if len(arguments) == 1 {
 		io.Copy(os.Stdout, os.Stdin)
 		return
@@ -40,3 +40,6 @@ func main() {
 		}
 	}
 }
+
+// go run cat.go   --> 실행하면 입력한 인수에 대해 출력함
+// go run cat.go flo_cus_20201230.log   --> 파일 읽어와서 출력하는 것과 다른게 무엇?

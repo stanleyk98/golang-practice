@@ -42,3 +42,4 @@ func main(){
 
 // 컴파일해서 다른 터미널에서 구동해야함
 // go build handleAll.go
+// 나는 패스
