@@ -14,6 +14,8 @@ func handle(signal os.Signal){
 
 func main(){
 	sigs := make(chan os.Signal, 1)
+	
+	// sigs 에 특정 시그널 선택안했기 때문에 모든 시그널에 해당함
 	signal.Notify(sigs)
 
 	go func(){

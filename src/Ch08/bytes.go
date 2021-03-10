@@ -26,7 +26,7 @@ func main() {
 
 	r := bytes.NewReader([]byte(buffer.String()))
 
-	// 이건 뭘 출력하는지?
+	// mastering go 를 출력함
 	fmt.Println(buffer.String())
 
 	for {
