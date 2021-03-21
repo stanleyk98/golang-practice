@@ -4,8 +4,9 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"os"
 	"io"
+	"os"
+	"strings"
 )
 
 func lineByLine(file string) error {
@@ -29,8 +30,9 @@ func lineByLine(file string) error {
 			fmt.Printf("파일읽는 도중 에러 발생 %s", err)
 			break
 		}
-		fmt.Print(line)
-		
+		//fmt.Print(line)
+		fmt.Printf("[%s]\n", strings.TrimSpace(line))
+
 	}
 	return nil
 }

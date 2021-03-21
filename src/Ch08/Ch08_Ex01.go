@@ -35,7 +35,6 @@ func wordByWord(file string) error {
 		for i := 0; i < len(words); i++ {
 
 			if words[i] == "Stanley" {
-				//words[i] = "Kim"
 				fmt.Println("Kim")
 				continue
 			}
@@ -60,5 +59,10 @@ func main() {
 	}
 }
 
-// go run byword.go test01.log
-// 이것도 왜 3번째 라인은 출력안될까?
+// go run ch08_ex01.go tmptext.txt
+
+/* 보완점
+1. 인수를 받을때 쉼표 기준으로 인수를 받도록 하기
+2. 두번째 인수를 txt 파일에서 찾도록 하기
+3. 세번째 인수를 kim 위치에 넣기
+*/
