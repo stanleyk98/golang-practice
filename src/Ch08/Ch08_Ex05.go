@@ -30,8 +30,8 @@ func lineByLine(file string) error {
 			fmt.Printf("파일읽는 도중 에러 발생 %s", err)
 			break
 		}
-		//fmt.Print(line)
-		fmt.Printf("[%s]\n", strings.TrimSpace(line))
+
+		fmt.Println(strings.TrimSpace(line))
 
 	}
 	return nil
@@ -53,5 +53,5 @@ func main() {
 	}
 }
 
-// go run byline.go test01.log
-// 왜 3rd line 은 출력되지 않을까?
+// go run ch08_ex05.go tmptext.txt
+// 왜 공백이 제거되지 않을까?
