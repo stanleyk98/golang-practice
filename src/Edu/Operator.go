@@ -18,6 +18,7 @@ func main() {
 	var num1, num2, num3, result int
 
 	fmt.Println("3자리 입력하기")
+	fmt.Println("천천히 입력해주세요~")
 	fmt.Scanln(&num1, &num2, &num3)
 
 	//result = &num1 x &num2 + &num3
