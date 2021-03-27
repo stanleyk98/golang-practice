@@ -26,4 +26,5 @@ func main() {
 
 END:
 	fmt.Println("끝~!")
+	fmt.Println("good~!")
 }
